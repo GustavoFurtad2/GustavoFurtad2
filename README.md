@@ -2,8 +2,9 @@
  Hi!
   <a href="https://github.com/GustavoFatality">
   </div>
-<div align="center" style="display: inline_block">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=GustavoFatality&show_icons=true&theme=radical"/>  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GustavoFatality&layout=compact&theme=radical"/>
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=GustavoFatality&show_icons=true&theme=radical"/>  
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GustavoFatality&layout=compact&theme=radical"/>
 </div>
 
 # Skills
