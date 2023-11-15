@@ -9,7 +9,6 @@
   <img align="center" alt="css" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="css" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
   <img align="center" alt="lua" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg">
-  <img align="center" alt="csharp" height="60" width="70" <img align="center" alt="csharp" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
 
 
 
