@@ -6,9 +6,8 @@
 # Skills
   <a href="https://github.com/GustavoFatality">
   </div>
-
 <div align="center">
- <img height="220em" src="https://github-readme-stats.vercel.app/api?username=GustavoFurtad2&show_icons=true&theme=radical"/><img height="205em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GustavoFurtad2&layout=compact&theme=radical"/>
+ <img height="220em" src="https://github-readme-stats.vercel.app/api?username=GustavoFurtad2&show_icons=true&theme=highcontrast"/><img height="205em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GustavoFurtad2&layout=compact&theme=highcontrast"/>
 </div>
 
   <div align="center" style="display: inline_block"><br>
