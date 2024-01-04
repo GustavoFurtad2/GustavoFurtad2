@@ -1,5 +1,5 @@
   <h1>Hello my name it's Gustavo.<BR>
-  Current Learning: Javascript, CSharp & Lua</h1>
+  Current Learning: Javascript, C++ & Lua</h1>
     <a href="https://github.com/GustavoFatality">
   </div>
 <div align="center">
@@ -7,6 +7,6 @@
 </div>
 
   <div align="center" style="display: inline_block"><br>
-  <img align="center" alt="css" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
-       <img align="center" alt="lua" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+  <img align="center" alt="js" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+       <img align="center" alt="cpp" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
   <img align="center" alt="lua" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg">
