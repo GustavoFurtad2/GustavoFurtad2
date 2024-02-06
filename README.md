@@ -1,7 +1,7 @@
 <h1>Hello!</h1>
 
 About me
-- I'm 15
+- I'm 15 years old
 - Trying to be a software engineer/software developer
 - Code every day to grow
 <BR><BR>
