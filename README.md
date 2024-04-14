@@ -1,6 +1,6 @@
 <h1>Hello!</h1>
 
-  My name is Gustavo, im 15 years old progamming since 12 years old.
+  My name is Gustavo. Im am 15 years old and progamming since 12 years old.
 
 <BR><BR>
 <div align="center">
