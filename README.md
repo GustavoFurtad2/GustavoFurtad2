@@ -2,8 +2,7 @@
 
 About me
 - I'm 15 years old
-- Trying to be a software engineer/software developer
-- Code every day to grow
+
 <BR><BR>
 <div align="center">
   <img align="center" alt="js" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
