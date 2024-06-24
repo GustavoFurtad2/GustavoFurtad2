@@ -13,8 +13,7 @@
 
 </div>
 <div align="center">
-
   
-<img height="201em" src="https://github-readme-stats.vercel.app/api?username=gustavofurtad2&theme=vision-friendly-dark&show_icons=true&hide_border=true&count_private=true"/>
- <img height="202em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=vision-friendly-dark&show_icons=true&hide_border=true&layout=compact"/>
+<img height="201em" src="https://github-readme-stats.vercel.app/api?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&count_private=true"/>
+ <img height="202em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
 </div>
