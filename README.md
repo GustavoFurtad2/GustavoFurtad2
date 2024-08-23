@@ -1,12 +1,12 @@
 <table>
 <td>
 <div align="center">
-  
- <img height="502em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
+
+ <div align="center"><h2>My name is Gustavo. Im am 16 years old and progamming since 12 years old.</h2></div>
+ <img height="242em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
 </div>
 </td>
 <td>
-<div align="center"><h2>My name is Gustavo. Im am 16 years old and progamming since 12 years old.</h2></div>
 
 <div align="center">
   I study Java and I want it to be my main language
