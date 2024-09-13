@@ -3,7 +3,7 @@
 <div align="center">
 
  <div align="center"><h2>My name is Gustavo. Im am 16 years old and progamming since 12 years old.</h2></div>
- <img height="300vw" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
+ <img height="250vw" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
 </div>
 </td>
 <td>
