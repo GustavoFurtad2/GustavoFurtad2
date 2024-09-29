@@ -9,7 +9,7 @@
 <td>
 
 <div align="center">
-  I study Java and I want it to be my main language
+  I study Java and use it as a main language
   <BR>
   <img align="center" alt="js" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
 </div>
