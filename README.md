@@ -9,13 +9,13 @@
 <td>
 
 <div align="center">
-  I study Java and use it as a main language
+  Main Language
   <BR>
   <img align="center" alt="js" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
 </div>
 
 <div align="center">
-  <BR>I study and use it as a hobby<BR>
+  <BR>As a hobby<BR>
   <img align="center" alt="js" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
   <img align="center" alt="cpp" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
   <img align="center" alt="cpp" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
@@ -23,7 +23,7 @@
 </div>
 <div align="center">
     <BR>
-  I have some experience with<BR>
+  Some experience with<BR>
 
   <img align="center" alt="cpp" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
   <img align="center" alt="lua" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
