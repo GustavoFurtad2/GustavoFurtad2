@@ -9,7 +9,7 @@
 <td>
 
 <div align="center">
-  Main Language
+  Main technologies
   <BR>
   <img align="center" alt="js" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
 </div>
