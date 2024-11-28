@@ -2,14 +2,23 @@
 <td>
 <div align="center">
 
- <div align="center"><h2>My name is Gustavo. Im am 16 years old and progamming since 12 years old.</h2></div>
+ <div align="left">
+ <h2>
+  <p>
+     Sup? My name is Gustavo, I'm am 16 years old, i really like to create things, my first contact with programming was with game modding 5 years ago, where I learned the basics of coding, 1 year ago I started taking programming seriously.
+  </p>
+  <p>
+     I'm currently focused on C++, and I currently consider myself a software developer.
+  </p>
+ </h2>
+ </div>
  <img height="250vw" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
 </div>
 </td>
 <td>
 
 <div align="center">
-  For work
+  For Work & Main Technologies
   <BR>
   <img align="center" alt="cpp" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
 </div>
