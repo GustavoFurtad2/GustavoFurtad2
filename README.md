@@ -8,7 +8,7 @@
      Sup? My name is Gustavo, I am 16 years old, I really like to create things, my first contact with programming was with game modding 5 years ago, where I learned the basics of coding, 1 year ago I started taking programming seriously.
   </p>
   <p>
-     I'm currently focused on C++, and I currently consider myself a software developer.
+     I'm currently focused on C++ and consider myself a software developer, but I also like playing with Game Dev and Homebrew.
   </p>
  </h2>
  </div>
