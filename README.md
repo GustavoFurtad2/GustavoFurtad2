@@ -5,7 +5,7 @@
  <div align="left">
  <h2>
   <p>
-     Sup? My name is Gustavo, I am 16 years old, I really like to create things, my first contact with programming was with game modding 5 years ago, where I learned the basics of coding, 1 year ago I started taking programming seriously.
+     Sup? My name is Gustavo, I am 16 years old, I code since 11 years old with game modding, where I learned the basics of coding, 1 year ago I started taking programming seriously.
   </p>
   <p>
      I'm currently focused on C++ and consider myself a software developer, but I also like playing with Game Devlopment and Homebrew.
