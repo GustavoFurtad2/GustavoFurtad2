@@ -34,7 +34,6 @@
   Some experience with<BR>
 
   <img align="center" alt="cpp" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
-  <img align="center" alt="lua" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
 </div>
 </td>
 </table>
