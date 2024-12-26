@@ -1,16 +1,40 @@
-## Hi there 👋
+<table>
+<td>
+<div align="center">
 
-<!--
-**GustavoFurtad2/GustavoFurtad2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+ <div align="left">
+ <h2>
+  <p>
+     Sup? My name is Gustavo, I am 16 years old.
+  </p>
+  <p>
+     I'm currently focused on Java and consider myself a software developer, but I also like playing with Game Devlopment and Homebrew.
+  </p>
+ </h2>
+ </div>
+ <img height="250vw" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
+</div>
+</td>
+<td>
 
-Here are some ideas to get you started:
+<div align="center">
+  For Work & Main Technologies
+  <BR>
+  <img align="center" alt="java" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+</div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<div align="center">
+  <BR>As a hobby<BR>
+  <img align="center" alt="js" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+  <img align="center" alt="c" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
+  <img align="center" alt="cpp" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg">
+  <img align="center" alt="lua" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg">
+</div>
+<div align="center">
+    <BR>
+  Some experience with<BR>
+
+  <img align="center" alt="cpp" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
+</div>
+</td>
+</table>
