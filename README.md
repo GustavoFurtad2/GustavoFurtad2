@@ -3,14 +3,12 @@
 <div align="center">
 
  <div align="left">
- <h2>
   <p>
-     Sup? My name is Gustavo, I am 16 years old.
+     Sup? My name is Gustavo, I'm 16 years old.
   </p>
   <p>
      I'm currently focused on Java and consider myself a software developer, but I also like playing with Game Devlopment and Homebrew.
   </p>
- </h2>
  </div>
  <img height="250vw" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
 </div>
