@@ -19,7 +19,9 @@
   For Work & Main Technologies
   <BR>
     <img align="center" alt="cs" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"/>
-       <img align="center" alt="git" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"/>
+     <img align="center" alt="git" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"/>
+    <img align="center" alt="git" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blazor/blazor-original.svg"/> 
+     <img align="center" alt="git" height="60" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg"/> 
 </div>
 
 <div align="center">
