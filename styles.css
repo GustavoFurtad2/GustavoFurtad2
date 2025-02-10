@@ -63,3 +63,13 @@
 .content .about-me h1 {
     font-size: 5vh;
 }
+
+.content .about-me img {
+    margin-top: 2vh;
+    border-radius: 50%;
+    width: 50vmin;
+    height: 50vmin;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+}
