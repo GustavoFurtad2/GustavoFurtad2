@@ -1,0 +1,104 @@
+/* /Shared/MainLayout.razor.rz.scp.css */
+*[b-p531rfodtv] {
+    box-sizing: border-box;
+}
+
+.page[b-p531rfodtv] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-p531rfodtv] {
+    flex: 1;
+}
+
+.topbar[b-p531rfodtv] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 641px) {
+
+     article[b-p531rfodtv] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+*[b-p433wnmt7i] {
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topbar[b-p433wnmt7i] {
+    background-color: rgb(78, 9, 66);
+    color: white;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    height: 60px;
+    z-index: 9999;
+}
+
+    .topbar a[b-p433wnmt7i] {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        position: relative;
+        padding: 8px 12px;
+        transition: color 0.3s ease;
+        z-index: 2;
+    }
+
+        .topbar a[b-p433wnmt7i]::before {
+            content: '';
+            position: absolute;
+            top: -18px;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background-color: rgb(104, 70, 94);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .topbar a:hover[b-p433wnmt7i]::before {
+            opacity: 1;
+        }
+
+        .topbar a:hover[b-p433wnmt7i] {
+            color: #FFD700;
+        }
+
+.name[b-p433wnmt7i] {
+    font-size: 20px;
+}
+
+.content[b-p433wnmt7i] {
+    padding-top: 70px;
+    text-align: center;
+}
+
+    .content .about-me h1[b-p433wnmt7i] {
+        font-size: 5vh;
+    }
+
+    .content .about-me img[b-p433wnmt7i] {
+        margin-top: 2vh;
+        border-radius: 50%;
+        width: 50vmin;
+        height: 50vmin;
+        max-width: 500px;
+        max-height: 500px;
+        object-fit: cover;
+    }
