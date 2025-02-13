@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Projects\\Portfolio\\Portfolio.csproj": {}
+    "C:\\Dev\\GustavoFurtad2\\Portfolio.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Projects\\Portfolio\\Portfolio.csproj": {
+    "C:\\Dev\\GustavoFurtad2\\Portfolio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Projects\\Portfolio\\Portfolio.csproj",
+        "projectUniqueName": "C:\\Dev\\GustavoFurtad2\\Portfolio.csproj",
         "projectName": "Portfolio",
-        "projectPath": "C:\\Dev\\Projects\\Portfolio\\Portfolio.csproj",
+        "projectPath": "C:\\Dev\\GustavoFurtad2\\Portfolio.csproj",
         "packagesPath": "C:\\Users\\Gu\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Projects\\Portfolio\\obj\\",
+        "outputPath": "C:\\Dev\\GustavoFurtad2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gu\\AppData\\Roaming\\NuGet\\NuGet.Config",

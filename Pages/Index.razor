@@ -7,11 +7,51 @@
             <h1>
                 Gustavo Furtado
             </h1>
+
             <BR>
+
+            <div class="profile">
             <h3>
                 Software Developer & Backend
             </h3>
-            <img src="picture.png"/>
+            <img id="picture" src="picture.png"/>
+            </div>
+            <BR>
+        <div class="title">
+            <h2>Sobre mim</h2>
+            <div class="description">
+                <p>
+                    @((MarkupString)AboutMeText)
+                </p>
+            </div>
+        </div>
+        <div class="tecnologies">
+            <h2>Principais Tecnologias</h2>
+            <div class="description">
+                @foreach (var tech in Tecnologies)
+                {
+                    <a href="@tech" target="_blank">
+                        <img src="@tech"/>
+                    </a>
+                }
+            </div>
+        </div>
+        <div class="projects">
+            <h2>Projetos</h2>
+            <div class="description">
+                @foreach (var project in Projects)
+                {
+                    <div class="project">
+                        <h3>- @project.Name</h3>
+                        <a href="@project.Link" target="_blank">
+                            <img src="@project.Image" />
+                        </a>
+                        <BR>
+                        <p>@project.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
         </div>
     </div>
 
@@ -77,17 +117,142 @@
         text-align: center;
     }
 
-        .content .about-me h1 {
-            font-size: 5vh;
+        .content .about-me .profile h3 {
+            font-size: 3vh;
         }
 
-        .content .about-me img {
-            margin-top: 2vh;
-            border-radius: 50%;
-            width: 50vmin;
-            height: 50vmin;
-            max-width: 500px;
-            max-height: 500px;
-            object-fit: cover;
-        }
+
+    #picture {
+        margin-top: 2vh;
+        border-radius: 50%;
+        width: 35vmin;
+        height: 35vmin;
+        max-width: 350px;
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    .title {
+        padding-top: 1vh;
+        color: initial;
+        color: rgb(78, 9, 66);
+        padding-left: 25%;
+        text-align: left;
+    }
+
+    .tecnologies {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1vh;
+        color: rgb(78, 9, 66);
+        padding-left: 25%;
+        text-align: left;
+    }
+
+    .tecnologies .description a img {
+        width: 5vmin;
+        height: 5vmin;
+        margin-left: 0.5vw;
+    }
+
+    .projects {
+        padding-top: 1vh;
+        color: rgb(78, 9, 66);
+        padding-left: 25%;
+        text-align: left;
+    }
+
+    .project {
+        margin-left: 2vw;
+    }
+
+    .project img {
+        margin-left: 1vw;
+        border: 1px solid rgb(78, 9, 66);
+        border-radius: 5px;
+    }
+
+    .project p {
+        margin-top: 1vh;
+        margin-left: 1vw;   
+    }
+
+    .description {
+        padding-top: 1vh;
+    }
+
+    .title .description {
+        max-width: 75%;
+    }
 </style>
+
+@code {
+
+    private string FullAboutMeText = "ㅤTudo bem? Sou desenvolvedor de software e desenvolvedor backend preparado para solucionar vários tipos de problemas, aprendo rápido novas tecnologias. <br>ㅤEstou sempre procurando melhorar minhas aplicações, bem como criar novas aplicações";
+    private string AboutMeText = "";
+    private List<String> Tecnologies = new List<String>
+    {
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/blazor/blazor-original.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    };
+
+    private List<Project> Projects = new List<Project>
+    {
+        new Project { Name = "Storm", Link = "https://github.com/GustavoFurtad2/Storm", Description = "É uma linguagem de programação interpretada", Image = "projects/storm_project.png"}
+    };
+
+    private int CurrentIndex = 0;
+    private System.Timers.Timer? Timer;
+
+    protected override void OnInitialized()
+    {
+        StartTyping();
+    }
+
+    private void StartTyping()
+    {
+        AboutMeText = "";
+        CurrentIndex = 0;
+
+        Timer = new System.Timers.Timer((1000 / FullAboutMeText.Length) * 2);
+        Timer.Elapsed += (sender, e) => UpdateText();
+        Timer.AutoReset = true;
+        Timer.Start();
+    }
+
+    private void UpdateText()
+    {
+        if (CurrentIndex < FullAboutMeText.Length)
+        {
+            if (FullAboutMeText[CurrentIndex] == '<' && CurrentIndex + 3 < FullAboutMeText.Length && FullAboutMeText.Substring(CurrentIndex, 4) == "<br>")
+            {
+                AboutMeText += "<br>";
+                CurrentIndex += 4;
+            }
+            else
+            {
+                AboutMeText += FullAboutMeText[CurrentIndex];
+                CurrentIndex++;
+            }
+
+            InvokeAsync(StateHasChanged);
+        }
+        else
+        {
+            Timer?.Stop();
+        }
+    }
+
+    public class Project
+    {
+        public string Name { get; set; }
+        public string Link { get; set; }
+        public string Description { get; set; }
+        public string Image { get; set; }
+    }
+}
