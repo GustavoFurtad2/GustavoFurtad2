@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Dev\\GustavoFurtad2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|c:\\dev\\gustavofurtad2\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|C:\\Dev\\GustavoFurtad2\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|c:\\dev\\gustavofurtad2\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|c:\\dev\\gustavofurtad2\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|C:\\Dev\\GustavoFurtad2\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|solutionrelative:shared\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|c:\\dev\\gustavofurtad2\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|C:\\Dev\\GustavoFurtad2\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Dev\\GustavoFurtad2\\Shared\\NavMenu.razor",
               "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
@@ -63,8 +63,7 @@
               "RelativeToolTip": "wwwroot\\css\\app.css",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-13T02:04:35.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T02:04:35.264Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Shared\\MainLayout.razor.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-12T18:38:43.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T18:38:43.159Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "Shared\\MainLayout.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T18:35:09.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T18:35:09.111Z"
             },
             {
               "$type": "Document",
@@ -102,18 +99,17 @@
               "RelativeToolTip": "Shared\\NavMenu.razor.css",
               "ViewState": "AQIAACQAAAAAAAAAAAAAADQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-12T18:33:28.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T18:33:28.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Dev\\GustavoFurtad2\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "Pages\\Index.razor",
               "ToolTip": "C:\\Dev\\GustavoFurtad2\\Pages\\Index.razor",
               "RelativeToolTip": "Pages\\Index.razor",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAAJoAAAAMAAAA",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAAAM0AAACfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-12T18:32:51.842Z",
               "EditorCaption": ""
