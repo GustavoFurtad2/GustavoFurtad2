@@ -20,7 +20,7 @@ jobs:
       with:
         dotnet-version: '6.0.x'
     - name: Publish with dotnet
-      run: dotnet publish --configuration Release --output build
+      run: dotnet publish Portfolio.csproj --configuration Release --output build
 
     - name: Change base-tag in index.html from / to GustavoFurtad2
       run: sed -i 's/<base href="\/" \/>/<base href="\/GustavoFurtad2\/" \/>/g' build/wwwroot/index.html
