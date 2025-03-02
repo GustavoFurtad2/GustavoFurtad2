@@ -7,7 +7,7 @@
      Sup? My name is Gustavo, I'm 16 years old.
   </p>
   <p>
-     I'm currently focused on C# and consider myself a software developer, but I also like playing with Game Development and Homebrew.
+     I'm currently focused on C# and consider myself a software developer/backend developer, but I also like playing with Game Development and Homebrew.
   </p>
  </div>
  <img height="250vw" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavofurtad2&theme=default&show_icons=true&hide_border=true&layout=compact"/>
