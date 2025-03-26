@@ -77,12 +77,12 @@
       "PackagePath": "staticwebassets\\picture.png"
     },
     {
-      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\projects\\storm_project.png",
-      "PackagePath": "staticwebassets\\projects\\storm_project.png"
-    },
-    {
       "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\storm_project.png",
+      "PackagePath": "staticwebassets\\storm_project.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Portfolio.Microsoft.AspNetCore.StaticWebAssets.props",

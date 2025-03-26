@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hcu3ajZZVQUir/mNVtqmAyCBcJnTSLFF+3QaEV+V+EI=",
+  "Hash": "a4hKdkeyjg2AtQQLs7eq2P00ZZURTxex/zlZbKLvdMA=",
   "Source": "Portfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -7921,25 +7921,6 @@
       "OriginalItemSpec": "wwwroot\\picture.png"
     },
     {
-      "Identity": "C:\\Dev\\GustavoFurtad2\\wwwroot\\projects\\storm_project.png",
-      "SourceId": "Portfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\GustavoFurtad2\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "projects/storm_project.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\projects\\storm_project.png"
-    },
-    {
       "Identity": "C:\\Dev\\GustavoFurtad2\\wwwroot\\sample-data\\weather.json",
       "SourceId": "Portfolio",
       "SourceType": "Discovered",
@@ -7957,6 +7938,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\Dev\\GustavoFurtad2\\wwwroot\\storm_project.png",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Dev\\GustavoFurtad2\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "storm_project.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storm_project.png"
     }
   ]
 }

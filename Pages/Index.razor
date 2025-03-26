@@ -9,19 +9,17 @@
             </h1>
 
             <BR>
-
+            <h2>
+                Desenvolvedor Backend
+            </h2>
             <div class="profile">
-            <h3>
-                Software Developer & Backend
-            </h3>
-            <img id="picture" src="picture.png"/>
             </div>
             <BR>
         <div class="title">
             <h2>Sobre mim</h2>
             <div class="description">
                 <p>
-                    @((MarkupString)AboutMeText)
+                    ㅤTudo bem? Sou desenvolvedor backend preparado para solucionar vários tipos de problemas, aprendo rápido novas tecnologias. <br>ㅤEstou sempre procurando melhorar minhas aplicações, bem como criar novas aplicações
                 </p>
             </div>
         </div>
@@ -30,25 +28,9 @@
             <div class="description">
                 @foreach (var tech in Tecnologies)
                 {
-                    <a href="@tech" target="_blank">
+                    <a href="@tech">
                         <img src="@tech"/>
                     </a>
-                }
-            </div>
-        </div>
-        <div class="projects">
-            <h2>Projetos</h2>
-            <div class="description">
-                @foreach (var project in Projects)
-                {
-                    <div class="project">
-                        <h3>- @project.Name</h3>
-                        <a href="@project.Link" target="_blank">
-                            <img src="@project.Image" />
-                        </a>
-                        <BR>
-                        <p>@project.Description</p>
-                    </div>
                 }
             </div>
         </div>
@@ -188,71 +170,23 @@
 
 @code {
 
-    private string FullAboutMeText = "ㅤTudo bem? Sou desenvolvedor de software e desenvolvedor backend preparado para solucionar vários tipos de problemas, aprendo rápido novas tecnologias. <br>ㅤEstou sempre procurando melhorar minhas aplicações, bem como criar novas aplicações";
     private string AboutMeText = "";
+
     private List<String> Tecnologies = new List<String>
     {
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/blazor/blazor-original.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
     };
 
-    private List<Project> Projects = new List<Project>
-    {
-        new Project { Name = "Storm", Link = "https://github.com/GustavoFurtad2/Storm", Description = "É uma linguagem de programação interpretada", Image = "storm_project.png"}
-    };
 
     private int CurrentIndex = 0;
     private System.Timers.Timer? Timer;
 
     protected override void OnInitialized()
     {
-        StartTyping();
     }
 
-    private void StartTyping()
-    {
-        AboutMeText = "";
-        CurrentIndex = 0;
-
-        Timer = new System.Timers.Timer((1000 / FullAboutMeText.Length) * 2);
-        Timer.Elapsed += (sender, e) => UpdateText();
-        Timer.AutoReset = true;
-        Timer.Start();
-    }
-
-    private void UpdateText()
-    {
-        if (CurrentIndex < FullAboutMeText.Length)
-        {
-            if (FullAboutMeText[CurrentIndex] == '<' && CurrentIndex + 3 < FullAboutMeText.Length && FullAboutMeText.Substring(CurrentIndex, 4) == "<br>")
-            {
-                AboutMeText += "<br>";
-                CurrentIndex += 4;
-            }
-            else
-            {
-                AboutMeText += FullAboutMeText[CurrentIndex];
-                CurrentIndex++;
-            }
-
-            InvokeAsync(StateHasChanged);
-        }
-        else
-        {
-            Timer?.Stop();
-        }
-    }
-
-    public class Project
-    {
-        public string Name { get; set; }
-        public string Link { get; set; }
-        public string Description { get; set; }
-        public string Image { get; set; }
-    }
 }
