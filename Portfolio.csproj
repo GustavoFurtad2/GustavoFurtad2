@@ -7,6 +7,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Stickman\idle\1.png" />
+    <None Include="wwwroot\Stickman\idle\2.png" />
+    <None Include="wwwroot\Stickman\jump\1.png" />
+    <None Include="wwwroot\Stickman\jump\2.png" />
+    <None Include="wwwroot\Stickman\jump\3.png" />
+    <None Include="wwwroot\Stickman\jump\4.png" />
+    <None Include="wwwroot\Stickman\jump\5.png" />
+    <None Include="wwwroot\Stickman\running\1.png" />
+    <None Include="wwwroot\Stickman\running\2.png" />
+    <None Include="wwwroot\Stickman\running\3.png" />
+    <None Include="wwwroot\Stickman\running\4.png" />
+    <None Include="wwwroot\Stickman\running\5.png" />
+    <None Include="wwwroot\Stickman\running\6.png" />
+    <None Include="wwwroot\Stickman\walking\1.png" />
+    <None Include="wwwroot\Stickman\walking\2.png" />
+    <None Include="wwwroot\Stickman\walking\3.png" />
+    <None Include="wwwroot\Stickman\walking\4.png" />
+    <None Include="wwwroot\Stickman\walking\5.png" />
+    <None Include="wwwroot\Stickman\walking\6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.28" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.28" PrivateAssets="all" />
   </ItemGroup>

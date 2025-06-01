@@ -1,14 +1,30 @@
 ﻿@inherits LayoutComponentBase
+@inject KeyboardService KeyboardService
 
-<div class="page">
-    <div class="topbar">
+<div class="layout-container" tabindex="0" @onkeydown="HandleKeyDown" @onkeyup="HandleKeyUp">
+    <header class="topbar">
         <NavMenu />
-    </div>
+    </header>
 
-    <main>
-
-        <article class="content px-4">
+    <main class="main-content">
+        <article class="content">
             @Body
         </article>
     </main>
 </div>
+
+@code {
+    private void HandleKeyDown(KeyboardEventArgs e)
+    {
+        KeyboardService.KeyDown(e);
+    }
+
+    private void HandleKeyUp(KeyboardEventArgs e)
+    {
+        KeyboardService.KeyUp(e);
+    }
+
+    protected override void OnInitialized()
+    {
+    }
+}

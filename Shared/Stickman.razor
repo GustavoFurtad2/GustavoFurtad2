@@ -1,0 +1,302 @@
+﻿@inject IJSRuntime JS
+@inject KeyboardService KeyboardService
+
+<div tabindex="0"
+    style="position: relative; outline: none;"
+    @onkeydown="KeyboardService.KeyDown"
+    @onkeyup="KeyboardService.KeyUp">
+
+    <div class="stickman-container" style="@($"left: {stickman.X}px; top: {stickman.Y}px; position: absolute;")">
+        <div style="width: 30px; height: 30px; z-index: 501">
+            <img src="@currentFrame" width="@stickman.Width" height="@stickman.Height" style="transform: scaleX(@scaleFactorX); transform-origin: center"/>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    GameObject stickman = new GameObject
+    {
+        Id = "stickman-container",
+        X = -1000, 
+        Y = -1000,
+        Width = 0,
+        Height = 0
+    };
+
+    private const int Speed = 5;
+    private System.Timers.Timer? AnimationTimer;
+    private System.Timers.Timer? MovementTimer;
+
+    private int windowWidth;
+    private int windowHeight;
+
+    private int currentAnimationFrame = 0;
+
+    private string[] idleFrames = new[]
+    {
+        "/Stickman/idle/1.png",
+        "/Stickman/idle/2.png",
+    };
+
+    private string[] walkFrames = new[]
+    {
+        "/Stickman/walking/1.png",
+        "/Stickman/walking/2.png",
+        "/Stickman/walking/3.png",
+        "/Stickman/walking/4.png",
+        "/Stickman/walking/5.png",
+        "/Stickman/walking/6.png",
+    };
+
+    private string[] jumpFrames = new[]
+    {
+        "/Stickman/jump/1.png",
+        "/Stickman/jump/2.png",
+        "/Stickman/jump/3.png",
+        "/Stickman/jump/4.png",
+        "/Stickman/jump/5.png",
+    };
+
+    private string[] runningFrames = new[]
+    {
+        "/Stickman/running/1.png",
+        "/Stickman/running/2.png",
+        "/Stickman/running/3.png",
+        "/Stickman/running/4.png",
+        "/Stickman/running/5.png",
+        "/Stickman/running/6.png",
+    };
+
+    private List<GameObject> Objects = new();
+
+
+
+    private string currentAnimation = "idle";
+    private string currentFrame = "/Stickman/idle/1.png";
+
+    private int scaleFactorX = 1;
+
+    private bool isLookingLeft = false;
+
+    private bool isJumping = false;
+    private bool isWalking = false;
+
+    private bool wasWalking = false;
+
+    private int c = 0;
+
+    private async Task LoadAllObjects()
+    {
+        Objects = await JS.InvokeAsync<List<GameObject>>("getAllRects", ".collider");
+    }
+
+    private bool CheckCollision(GameObject a, GameObject b)
+    {
+        return a.X < b.X + b.Width && a.X + a.Width > b.X && a.Y < b.Y + b.Height && a.Y + a.Height > b.Y;
+    }
+
+    protected override void OnInitialized()
+    {
+        KeyboardService.OnKeyPress += OnKeyPress;
+        KeyboardService.OnKeyRelease += OnKeyRelease;
+
+        AnimationTimer = new System.Timers.Timer(75);
+
+        AnimationTimer.Elapsed += async (s, e) =>
+        {
+            currentAnimationFrame += 1;
+
+            if (currentAnimation == "idle")
+            {
+
+                if (currentAnimationFrame > idleFrames.Length - 1)
+                {
+                    currentAnimationFrame = 0;
+                }
+
+                currentFrame = idleFrames[currentAnimationFrame];
+            }
+            else if (currentAnimation == "walking")
+            {
+
+                if (currentAnimationFrame > walkFrames.Length - 1)
+                {
+                    currentAnimationFrame = 0;
+                }
+
+                currentFrame = walkFrames[currentAnimationFrame];
+            }
+            else if (currentAnimation == "jump")
+            {
+
+                if (currentAnimationFrame > jumpFrames.Length - 1)
+                {
+                    currentAnimationFrame = 0;
+                }
+
+                currentFrame = jumpFrames[currentAnimationFrame];
+            }
+            else if (currentAnimation == "running")
+            {
+
+                if (currentAnimationFrame > runningFrames.Length - 1)
+                {
+                    currentAnimationFrame = 0;
+                }
+
+                currentFrame = runningFrames[currentAnimationFrame];
+            }
+
+            await InvokeAsync(StateHasChanged);
+        };
+
+        AnimationTimer.Start();
+    }
+
+    private void OnKeyPress(string key)
+    {
+
+    }
+
+    private void OnKeyRelease(string key)
+    {
+
+    }
+
+    private async Task ScrollToStickman()
+    {
+        await JS.InvokeVoidAsync("scrollToPosition", stickman.X, stickman.Y);
+    }
+
+    private async void UpdateStickman()
+    {
+
+        var moved = false;
+
+        if (KeyboardService.IsKeyPressed("ArrowLeft"))
+        {
+            stickman.X -= Speed;
+            moved = true;
+            wasWalking = isWalking;
+            isWalking = true;
+            isLookingLeft = true;
+        }
+        else if (KeyboardService.IsKeyPressed("ArrowRight"))
+        {
+            stickman.X += Speed;
+            moved = true;
+            wasWalking = isWalking;
+            isWalking = true;
+            isLookingLeft = false;
+        }
+        else
+        {
+            wasWalking = isWalking;
+            isWalking = false;
+        }
+
+        if (KeyboardService.IsKeyPressed("ArrowUp"))
+        {
+            stickman.Y -= Speed;
+            moved = true;
+            wasWalking = isWalking;
+            isWalking = true;
+        }
+        else if (KeyboardService.IsKeyPressed("ArrowDown"))
+        {
+            stickman.Y += Speed;
+            moved = true;
+            wasWalking = isWalking;
+            isWalking = true;
+        }
+        else {
+
+            if (!isWalking)
+            {
+                wasWalking = isWalking;
+                isWalking = false;
+            }
+        }
+
+        if (isWalking && isWalking != wasWalking)
+        {
+            currentAnimationFrame = 0;
+            currentAnimation = "running";
+            wasWalking = isWalking;
+        }
+        else if (!isWalking && isWalking == wasWalking)
+        {
+            currentAnimationFrame = 0;
+            currentAnimation = "idle";
+            wasWalking = isWalking;
+        }
+
+        if (moved)
+        {
+            scaleFactorX = isLookingLeft == false ? 1 : -1; 
+            await ScrollToStickman();
+        }
+
+
+        foreach (var obj in Objects)
+        {
+
+            if (CheckCollision(stickman, obj))
+            {
+                c += 1;
+            }
+        }
+
+        await InvokeAsync(StateHasChanged);
+
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+
+        if (firstRender)
+        {
+
+            MovementTimer = new System.Timers.Timer(16);
+            MovementTimer.Elapsed += (s, e) => UpdateStickman();
+
+            MovementTimer.Start();
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        if (firstRender)
+        {
+
+            var size = await JS.InvokeAsync<BrowserSize>("getWindowSize");
+            windowWidth = size.Width;
+            windowHeight = size.Height;
+            stickman.X = ((size.Width / 2) - (size.Width / 16)) - size.Width / 16;
+            stickman.Y = ((size.Height / 16) / 2) - size.Height / 32;
+            stickman.Width = ViewportConverter.VminToPx(15, windowWidth, windowHeight);
+            stickman.Height = ViewportConverter.VminToPx(15, windowWidth, windowHeight);
+
+            await LoadAllObjects();
+
+            await ScrollToStickman();
+        }
+    }
+
+    public class BrowserSize
+    {
+        public int Width { get; set; }
+        public int Height { get; set; }
+    }
+
+    public void Dispose()
+    {
+
+        KeyboardService.OnKeyPress -= OnKeyPress;
+        KeyboardService.OnKeyRelease -= OnKeyRelease;
+        MovementTimer?.Stop();
+        MovementTimer?.Dispose();
+    }
+}

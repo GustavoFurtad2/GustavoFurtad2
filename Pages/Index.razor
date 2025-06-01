@@ -1,20 +1,22 @@
 ﻿@page "/"
+@inject KeyboardService KeyboardService
 
 <PageTitle>Gustavo Furtado</PageTitle>
 
-    <div class="content">
-        <div class="about-me">
-            <h1>
-                Gustavo Furtado
-            </h1>
+<div class="content">
+    <div class="about-me">
+        <h1>
+            Gustavo Furtado
+        </h1>
 
-            <BR>
-            <h2>
-                Desenvolvedor Backend
-            </h2>
-            <div class="profile">
-            </div>
-            <BR>
+        <Stickman/>
+
+        <h2 id="role" class="collider">
+            Desenvolvedor Backend
+        </h2>
+        <div class="profile">
+        </div>
+        <BR>
         <div class="title">
             <h2>Sobre mim</h2>
             <div class="description">
@@ -29,13 +31,30 @@
                 @foreach (var tech in Tecnologies)
                 {
                     <a href="@tech">
-                        <img src="@tech"/>
+                        <img src="@tech" />
                     </a>
                 }
             </div>
         </div>
-        </div>
+        <br />        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
     </div>
+</div>
 
 <style>
     * {
@@ -43,6 +62,26 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    .stickman-container {
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        z-index: 100;
+    }
+
+    .stickman-body {
+        width: 30px;
+        height: 50px;
+        background-color: black;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    #role {
+        margin-top: 15vh;
     }
 
     .topbar {
@@ -60,58 +99,12 @@
         z-index: 9999;
     }
 
-        .topbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            position: relative;
-            padding: 8px 12px;
-            transition: color 0.3s ease;
-            z-index: 2;
-        }
-
-            .topbar a::before {
-                content: '';
-                position: absolute;
-                top: -18px;
-                left: 0;
-                width: 100%;
-                height: 65px;
-                background-color: rgb(104, 70, 94);
-                opacity: 0;
-                transition: opacity 0.3s ease;
-                z-index: -1;
-            }
-
-            .topbar a:hover::before {
-                opacity: 1;
-            }
-
-            .topbar a:hover {
-                color: #FFD700;
-            }
-
     .name {
         font-size: 20px;
     }
 
     .content {
         text-align: center;
-    }
-
-        .content .about-me .profile h3 {
-            font-size: 3vh;
-        }
-
-
-    #picture {
-        margin-top: 2vh;
-        border-radius: 50%;
-        width: 35vmin;
-        height: 35vmin;
-        max-width: 350px;
-        max-height: 350px;
-        object-fit: cover;
     }
 
     .title {
@@ -166,11 +159,10 @@
     .title .description {
         max-width: 75%;
     }
+
 </style>
 
 @code {
-
-    private string AboutMeText = "";
 
     private List<String> Tecnologies = new List<String>
     {
@@ -181,12 +173,5 @@
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
     };
 
-
-    private int CurrentIndex = 0;
-    private System.Timers.Timer? Timer;
-
-    protected override void OnInitialized()
-    {
-    }
 
 }

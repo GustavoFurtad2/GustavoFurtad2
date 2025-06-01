@@ -13,6 +13,82 @@
       "PackagePath": "staticwebassets\\Portfolio.styles.css"
     },
     {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\idle\\1.png",
+      "PackagePath": "staticwebassets\\Stickman\\idle\\1.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\idle\\2.png",
+      "PackagePath": "staticwebassets\\Stickman\\idle\\2.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\jump\\1.png",
+      "PackagePath": "staticwebassets\\Stickman\\jump\\1.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\jump\\2.png",
+      "PackagePath": "staticwebassets\\Stickman\\jump\\2.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\jump\\3.png",
+      "PackagePath": "staticwebassets\\Stickman\\jump\\3.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\jump\\4.png",
+      "PackagePath": "staticwebassets\\Stickman\\jump\\4.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\jump\\5.png",
+      "PackagePath": "staticwebassets\\Stickman\\jump\\5.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\running\\1.png",
+      "PackagePath": "staticwebassets\\Stickman\\running\\1.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\running\\2.png",
+      "PackagePath": "staticwebassets\\Stickman\\running\\2.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\running\\3.png",
+      "PackagePath": "staticwebassets\\Stickman\\running\\3.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\running\\4.png",
+      "PackagePath": "staticwebassets\\Stickman\\running\\4.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\running\\5.png",
+      "PackagePath": "staticwebassets\\Stickman\\running\\5.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\running\\6.png",
+      "PackagePath": "staticwebassets\\Stickman\\running\\6.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\walking\\1.png",
+      "PackagePath": "staticwebassets\\Stickman\\walking\\1.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\walking\\2.png",
+      "PackagePath": "staticwebassets\\Stickman\\walking\\2.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\walking\\3.png",
+      "PackagePath": "staticwebassets\\Stickman\\walking\\3.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\walking\\4.png",
+      "PackagePath": "staticwebassets\\Stickman\\walking\\4.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\walking\\5.png",
+      "PackagePath": "staticwebassets\\Stickman\\walking\\5.png"
+    },
+    {
+      "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\Stickman\\walking\\6.png",
+      "PackagePath": "staticwebassets\\Stickman\\walking\\6.png"
+    },
+    {
       "Id": "C:\\Dev\\GustavoFurtad2\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
