@@ -36,6 +36,22 @@
                 }
             </div>
         </div>
+        <div class="projects">
+            <h2>Projetos</h2>
+            <div class="description">
+                @foreach (var project in Projects)
+                {
+                    <div class="project">
+                        <h3>- @project.Name</h3>
+                        <a href="@project.Link" target="_blank">
+                            <img src="@project.Image" />
+                        </a>
+                        <BR>
+                        <p>@project.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
         <br />        <br />
         <br />
         <br />
@@ -160,6 +176,11 @@
         max-width: 75%;
     }
 
+    .project a img {
+        width: 40vw;
+        height: 40vh;
+    }
+
 </style>
 
 @code {
@@ -173,5 +194,17 @@
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
     };
 
+    private class Project
+    {
+        public string Name { get; set; }
+        public string Link { get; set; }
+        public string Description { get; set; }
+        public string Image { get; set; }
+    }
+
+    private List<Project> Projects = new List<Project>
+    {
+        new Project { Name = "Virtual Store API", Link = "https://github.com/GustavoFurtad2/VirtualStore", Description = "Uma API de gerenciamento de produtos para uma loja virtual", Image = "virtual_store.png"}
+    };
 
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X3sw/jypMn85B2vyPbF/hprKWKwoQR5NT16R74og/e0=",
+  "Hash": "l3lcDBZfyJnofRVqpsI4wiHfP+4CFlTIv1A3u2gGk0A=",
   "Source": "Portfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -8301,12 +8301,12 @@
       "OriginalItemSpec": "wwwroot\\Stickman\\walking\\6.png"
     },
     {
-      "Identity": "C:\\Dev\\GustavoFurtad2\\wwwroot\\storm_project.png",
+      "Identity": "C:\\Dev\\GustavoFurtad2\\wwwroot\\virtual_store.png",
       "SourceId": "Portfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Dev\\GustavoFurtad2\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "storm_project.png",
+      "RelativePath": "virtual_store.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8317,7 +8317,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\storm_project.png"
+      "OriginalItemSpec": "wwwroot\\virtual_store.png"
     }
   ]
 }

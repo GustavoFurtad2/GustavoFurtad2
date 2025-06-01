@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Dev\\GustavoFurtad2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|C:\\Dev\\GustavoFurtad2\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|c:\\dev\\gustavofurtad2\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|c:\\dev\\gustavofurtad2\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|C:\\Dev\\GustavoFurtad2\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{277A027A-14AB-47FF-A296-7D0117F015C0}|Portfolio.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -110,8 +110,7 @@
               "RelativeToolTip": "wwwroot\\index.html",
               "ViewState": "AQIAADYAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-30T20:31:11.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T20:31:11.234Z"
             },
             {
               "$type": "Document",
@@ -181,7 +180,7 @@
               "RelativeDocumentMoniker": "Pages\\Index.razor",
               "ToolTip": "C:\\Dev\\GustavoFurtad2\\Pages\\Index.razor",
               "RelativeToolTip": "Pages\\Index.razor",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAswBcAAACdAAAA",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAqwLQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-12T18:32:51.842Z",
               "EditorCaption": ""
