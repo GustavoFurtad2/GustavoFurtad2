@@ -20,6 +20,63 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+
+        window.getWindowSize = () => {
+            return { width: window.innerWidth, height: window.innerHeight }
+        }
+
+        window.scrollToPosition = (x, y) => {
+            window.scrollTo({
+                left: x,
+                top: y,
+                behavior: "smooth"
+            })
+        }
+
+        window.getElementRect = (id) => {
+
+            const elem = document.getElementById(id)
+
+            if (!elem) {
+                return null
+            }
+
+            const rect = elem.getBoundingClientRect();
+
+            return {
+                x: rect.x,
+                y: rect.y,
+                width: rect.width,
+                height: rect.height
+            }
+        }
+
+        window.getAllRects = (selector) => {
+
+            const elements = document.querySelectorAll(selector)
+            const rects = []
+
+            elements.forEach(el => {
+
+                const rect = el.getBoundingClientRect()
+
+                rects.push({
+
+                    id: rect.id || null,
+
+                    x: rect.left,
+                    y: rect.top,
+                    width: rect.width,
+                    height: rect.height
+                })
+
+            })
+
+            return rects
+        }
+
+    </script>
 </body>
 
 </html>
