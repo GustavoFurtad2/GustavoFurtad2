@@ -4,7 +4,7 @@
 
  <div align="left">
   <p>
-     Sup? My name is Gustavo, I'm 16 years old.
+     Sup? My name is Gustavo, I'm 17 years old.
   </p>
   <p>
      I'm currently focused on C# and backend development. I also do some frontend stuff, as well as dabbling in game development and homebrew for old consoles.
@@ -22,11 +22,11 @@
      <img align="center" alt="git" height="60" width="50" src="./icons/git-original.svg"/>
     <img align="center" alt="blazor" height="60" width="50" src="./icons/blazor-original.svg"/> 
      <img align="center" alt="dotnetcore" height="60" width="50" src="./icons/dotnetcore-original.svg"/> 
+  <img align="center" alt="js" height="60" width="50" src="./icons/javascript-original.svg">
 </div>
 
 <div align="center">
   <BR>As a hobby<BR>
-  <img align="center" alt="js" height="60" width="50" src="./icons/javascript-original.svg">
   <img align="center" alt="cpp" height="60" width="50" src="./icons/cplusplus-original.svg">
   <img align="center" alt="lua" height="60" width="50" src="./icons/lua-original.svg">
 </div>
