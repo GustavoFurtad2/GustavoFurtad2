@@ -18,6 +18,8 @@
 <div align="center">
   For Work & Main Technologies
   <BR>
+    <img align="center" alt="flutter" height="60" width="50" src="https://https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg"/>
+ <img align="center" alt="flutter" height="60" width="50" src=" https://github.com/devicons/devicon/blob/master/icons/dart/dart-original.svg"/>
     <img align="center" alt="cs" height="60" width="50" src="./icons/csharp-original.svg"/>
      <img align="center" alt="git" height="60" width="50" src="./icons/git-original.svg"/>
     <img align="center" alt="blazor" height="60" width="50" src="./icons/blazor-original.svg"/> 
