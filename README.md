@@ -24,7 +24,6 @@
      <img align="center" alt="dotnetcore" height="60" width="50" src="./icons/dotnetcore-original.svg"/> <BR>
   <img align="center" alt="js" height="60" width="50" src="./icons/javascript-original.svg">
   <img align="center" alt="cpp" height="60" width="50" src="./icons/cplusplus-original.svg">
-  <img align="center" alt="lua" height="60" width="50" src="./icons/lua-original.svg">
   <img align="center" alt="cpp" height="60" width="50" src="./icons/c-original.svg"><BR>
   <img align="center" alt="lua" height="60" width="50" src="./icons/lua-original.svg">
 </div>
